@@ -1,0 +1,223 @@
+@font-face {
+  src: url("../font/sweet_signature/Sweet Signature.ttf");
+  font-family: signature;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  font-family: "Poppins";
+}
+
+body {
+  width: 100%;
+  height: max-content;
+}
+body header {
+  width: inherit;
+  height: inherit;
+}
+body header nav {
+  width: inherit;
+  height: 70px;
+  box-shadow: 10px 0px 5px rgba(51, 51, 51, 0.5333333333);
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+}
+body header nav ul.first_section {
+  font-weight: bolder;
+  color: orange;
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-right: 200px;
+}
+body header nav ul.first_section p.logo {
+  font-family: signature;
+  width: max-content;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+body header nav ul.first_section div.search {
+  display: flex;
+  position: relative;
+  width: max-content;
+  align-items: center;
+  margin-left: 20px;
+}
+body header nav ul.first_section div.search input[type=text] {
+  width: 130px;
+  height: 30px;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  background: #cecece;
+  padding-left: 10px;
+  transition: 0.5s;
+  color: #333;
+}
+body header nav ul.first_section div.search input[type=text]:hover {
+  width: 250px;
+  transition: 0.5s;
+}
+body header nav ul.first_section div.search img {
+  width: 15px;
+  position: absolute;
+  right: 12px;
+  cursor: pointer;
+}
+body header nav ul.second_section {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+body header nav ul.second_section li {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+body header nav ul.second_section li img {
+  width: 35px;
+  cursor: pointer;
+}
+body header nav ul.third_section {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+body header nav ul.third_section li {
+  margin-right: 20px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+body header nav ul.third_section li img {
+  width: 30px;
+  cursor: pointer;
+}
+body header nav ul.third_section li img#profile {
+  width: 50px;
+  border-radius: 50%;
+}
+body header div.action {
+  width: 200px;
+  height: max-content;
+  background: #cecece;
+  position: absolute;
+  right: 40px;
+  top: 50px;
+  padding: 10px;
+  border-radius: 5px;
+  display: none;
+}
+body header div.action div.element {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+body header div.action div.element img {
+  width: 25px;
+  margin-right: 10px;
+}
+body div.body_container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+body div.body_container div.left {
+  width: 20%;
+  height: 100vh;
+  background: rgba(128, 128, 128, 0.178);
+}
+body div.body_container div.middle {
+  width: 60%;
+  height: 100vh;
+  background: rgba(128, 128, 128, 0.178);
+  overflow-y: scroll;
+}
+body div.body_container div.middle div.img-card {
+  width: 400px;
+  height: max-content;
+  background: rgba(255, 166, 0, 0.377);
+  margin: 70px auto;
+  border-radius: 30px;
+  box-shadow: 2px 2px 3px rgba(51, 51, 51, 0.5333333333);
+}
+body div.body_container div.middle div.img-card div.user {
+  width: 100%;
+  height: 80px;
+  background: white;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+body div.body_container div.middle div.img-card div.user img {
+  width: 70px;
+  border-radius: 50%;
+  position: absolute;
+  top: 25px;
+  border: 3px white solid;
+}
+body div.body_container div.middle div.img-card div.container-img {
+  width: 98%;
+  margin: 4px auto;
+  height: max-content;
+}
+body div.body_container div.middle div.img-card div.container-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+}
+body div.body_container div.middle div.img-card p.legende {
+  width: 100%;
+  height: max-content;
+  padding: 5px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+body div.body_container div.middle div.img-card div.reaction {
+  width: 100%;
+  height: max-content;
+  background: white;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0px;
+}
+body div.body_container div.middle div.img-card div.reaction div.bg {
+  width: 100px;
+  height: 40px;
+  background: rgba(255, 166, 0, 0.377);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  cursor: pointer;
+  border: 1px orange solid;
+}
+body div.body_container div.middle div.img-card div.reaction div.bg img {
+  width: 29px;
+}
+body div.body_container div.right {
+  width: 20%;
+  height: 100vh;
+  background: rgba(128, 128, 128, 0.178);
+}
+
+/*# sourceMappingURL=blog.css.map */

@@ -1,0 +1,82 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <meta charset="UTF-8">
+    <title>BeauxArts</title>
+</head>
+<body>
+    <div class="background">
+
+        <p class="logo">BeauxArts</p>
+
+        <img src="{% static 'img/top.png' %}" alt="" name="top">
+        <img src="{% static 'img/bottom.png' %}" alt="" name="bottom">
+
+        <div class="card">
+
+            <form class="front" action="">
+
+                <div class="element">
+                    <input type="email" name="" placeholder="Votre email">
+                </div>
+
+                <div class="element">
+                    <input type="password" name="" placeholder="Votre mot de passe">
+                </div>
+
+                    <button type="submit">Connexion</button>
+
+                    <div class="reseaux">
+                        <img src="{% static 'img/icons8-google-windows-11-color/icons8-google-48.png' %}" alt="" name="google">
+                        <img src="{% static 'img/icons8-facebook-color/icons8-facebook-48.png' %}" alt="" name="facebook">
+                    </div>
+
+                    <p><a href="#" id="linkToSwitch">Créer un compte?</a></p>
+
+            </form>
+
+            <form class="back" action="">
+
+                <div class="element">
+                    <input type="text" name="" placeholder="Votre nom d'utilisateur">
+                </div>
+
+                <div class="element">
+                    <input type="email" name="" placeholder="Votre email">
+                </div>
+
+                <div class="element">
+                    <input type="password" name="" placeholder="Votre mot de passe">
+                </div>
+
+                <div class="element">
+                    <input type="password" name="" placeholder="Votre tapez à nouveau le mot de passe">
+                </div>
+
+                <button type="submit">S'inscrire</button>
+
+            </form>
+
+        </div>
+
+
+
+        <div class="text">
+
+            <p name="salutation">Bienvenu,</p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit dolore nostrum, placeat quidem,
+            dolores repellendus id architecto minus fugiat atque ratione voluptas numquam necessitatibus magnam
+            doloremque cupiditate voluptatibus impedit dolorum provident iusto officiis modi. Atque ipsam quia
+            <p>Chez<span  name="titre">BeauxArts</span></p>
+
+        </div>
+
+    </div>
+
+
+</body>
+<script src="{% static 'js/script.js'%}"></script>
+</html>
